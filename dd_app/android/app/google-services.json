@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742231820930",
+    "project_id": "drinkdriveapp-3d02c",
+    "storage_bucket": "drinkdriveapp-3d02c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742231820930:android:12300bfe6a158562fd829b",
+        "android_client_info": {
+          "package_name": "com.example.dd_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtOfrbG15isjF3iv5mbycHVYrq7vNcbOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "drinkdriveapp-3d02c",
+          "appId": "1:742231820930:android:12300bfe6a158562fd829b",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "drinkdriveapp-3d02c",
+          "configurations": {
+            "android": "1:742231820930:android:12300bfe6a158562fd829b",
+            "web": "1:742231820930:web:a84f9a10c8a21e7cfd829b"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
