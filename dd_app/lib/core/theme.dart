@@ -1,32 +1,33 @@
 import 'package:flutter/material.dart';
 
-/// Tema oscuro para la app DD (app nocturna)
+/// Tema claro para la app DD
 class AppTheme {
   static ThemeData get darkTheme {
     return ThemeData(
       useMaterial3: true,
-      brightness: Brightness.dark,
-      colorScheme: ColorScheme.dark(
+      brightness: Brightness.light,
+      colorScheme: ColorScheme.light(
         primary: Colors.blue,
         secondary: Colors.lightBlueAccent,
-        surface: const Color(0xFF1E1E1E),
-        background: const Color(0xFF121212),
+        surface: Colors.white,
         error: Colors.redAccent,
       ),
-      scaffoldBackgroundColor: const Color(0xFF121212),
+      scaffoldBackgroundColor: Colors.white,
       appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xFF1E1E1E),
+        backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
+        iconTheme: IconThemeData(color: Colors.black87),
         titleTextStyle: TextStyle(
-          color: Colors.white,
+          color: Colors.black87,
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
       ),
       cardTheme: CardThemeData(
-        color: const Color(0xFF2D2D2D),
-        elevation: 4,
+        color: Colors.white,
+        elevation: 2,
+        shadowColor: Colors.black12,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -47,7 +48,7 @@ class AppTheme {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: const Color(0xFF2D2D2D),
+        fillColor: const Color(0xFFF5F5F5),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide.none,
@@ -61,17 +62,17 @@ class AppTheme {
       ),
       textTheme: const TextTheme(
         headlineLarge: TextStyle(
-          color: Colors.white,
+          color: Colors.black87,
           fontSize: 28,
           fontWeight: FontWeight.bold,
         ),
         headlineMedium: TextStyle(
-          color: Colors.white,
+          color: Colors.black87,
           fontSize: 24,
           fontWeight: FontWeight.bold,
         ),
         bodyLarge: TextStyle(
-          color: Colors.white,
+          color: Colors.black87,
           fontSize: 16,
         ),
         bodyMedium: TextStyle(

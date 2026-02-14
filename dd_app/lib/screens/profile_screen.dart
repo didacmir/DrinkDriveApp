@@ -79,6 +79,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           content: Text('Cambiado a ${newRole == 'driver' ? 'Conductor' : 'Pasajero'}'),
           behavior: SnackBarBehavior.floating,
           backgroundColor: Theme.of(context).colorScheme.primary,
+          duration: const Duration(milliseconds: 1500),
         ),
       );
     }

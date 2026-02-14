@@ -45,7 +45,10 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: ${e.toString()}')),
+          SnackBar(
+            content: Text('Error: ${e.toString()}'),
+            duration: const Duration(milliseconds: 1500),
+          ),
         );
       }
     } finally {

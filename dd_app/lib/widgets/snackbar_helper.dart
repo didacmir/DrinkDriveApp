@@ -47,7 +47,7 @@ class SnackBarHelper {
     required String message,
     required IconData icon,
     required Color backgroundColor,
-    Duration duration = const Duration(seconds: 3),
+    Duration duration = const Duration(milliseconds: 1500),
   }) {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
@@ -74,13 +74,7 @@ class SnackBarHelper {
         ),
         margin: const EdgeInsets.all(16),
         duration: duration,
-        action: SnackBarAction(
-          label: 'OK',
-          textColor: Colors.white,
-          onPressed: () {
-            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-          },
-        ),
+        dismissDirection: DismissDirection.horizontal,
       ),
     );
   }

@@ -290,7 +290,10 @@ class _RideDetailScreenState extends State<RideDetailScreen> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Gracias por tu puntuación')),
+        const SnackBar(
+          content: Text('Gracias por tu puntuación'),
+          duration: Duration(milliseconds: 1500),
+        ),
       );
       Navigator.pop(context);
     }
